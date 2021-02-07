@@ -72,3 +72,19 @@ img {
 .centrar-texto {
     text-align: center;
 }
+
+/* header */
+
+.header {
+    background-image: url(../img/banner.jpg);
+    height: 60rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center; /* asi hacemos que se centre hacia el centro cuando la imagen se va haciendo más pequeña, se pone dos veces center porque tenemos que centrarlo tanto vertical como horizontalmente */
+}
+
+.header__texto {
+    text-align: center;
+    color: var(--blanco);
+    margin-top: 5rem;
+}
