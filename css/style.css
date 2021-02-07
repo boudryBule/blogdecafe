@@ -88,3 +88,44 @@ img {
     color: var(--blanco);
     margin-top: 5rem;
 }
+
+@media (min-width: 768px) {
+    
+    .header__texto {
+        margin-top: 15rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .barra {
+        display: flex;
+        justify-content: space-between; /* para alinear horizontalmente */
+        align-items: center; /* para alinear verticalmente */
+    }    
+}
+
+.logo {
+    color: var(--blanco);
+}
+
+.logo__nombre {
+    font-weight: normal;
+}
+
+.logo__bold {
+    font-weight: bold;
+}
+
+@media (min-width: 768px) { /* cuando lo tenemos en una pantalla grande queremos que se muestren todos en fila */
+    .navegacion {
+        display: flex;
+        gap: 2rem;
+    }
+}
+
+.navegacion__enlace {
+    display: block;
+    text-align: center;
+    font-size: 1.8rem;
+    color: var(--blanco);
+}
