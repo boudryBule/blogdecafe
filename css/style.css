@@ -4,6 +4,7 @@
 
 
     --primario: #784D3C;
+    --gris: #e1e1e1;
     --blanco: #ffff;
     --negro: #0000;
 }
@@ -136,4 +137,38 @@ img {
         grid-template-columns: 2fr 1fr;
         column-gap: 4rem;
     }
+}
+
+.entrada {
+    border-bottom: 1px solid var(--gris); /* para crear la barra gris al final de los posts */
+    margin-bottom: 2rem;
+}
+
+.entrada:last-of-type{ /* en el último no queremos ni el margin ni que salga la barra gris */
+
+    border: none;
+    margin-bottom: 0;
+}
+
+.boton {
+
+    display: block; /* toma todo el espacio */
+    font-family: var(--fuenteHeading);
+    color: var(--blanco);
+    text-align: center;
+    padding: 1rem 3rem;
+    font-size: 1.8rem;
+    text-transform:uppercase;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+@media (min-width: 768px) {
+    .boton{
+        display: inline-block;
+    }
+}
+
+.boton--primario {
+    background-color: black;
+   
 }
