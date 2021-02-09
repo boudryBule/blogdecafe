@@ -28,7 +28,9 @@ body {
 
 .contenedor {
     max-width: 120rem;
-    width: 90%;
+    width: 90%; /* para que el texto no se vaya hasta los bordes */
+    width: min(90%, 120rem); /* poner esto es lo mismo que las dos líneas de arriba pero en corto
+    aplica el mínimo de los dos, o poner 90% de width o poner 1200px */
     margin: 0 auto; /* para centrarlo */
 }
 
@@ -98,6 +100,9 @@ img {
     }
 }
 
+.barra {
+    padding-top: 4rem;
+}
 @media (min-width: 768px) {
     .barra {
         display: flex;
@@ -206,3 +211,9 @@ img {
     font-size: 2rem;
 }
  
+
+.footer {
+    background-color: black;
+    padding-bottom: 3rem;
+    margin-top: 4rem;
+}
