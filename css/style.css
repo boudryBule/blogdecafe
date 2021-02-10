@@ -217,3 +217,27 @@ img {
     padding-bottom: 3rem;
     margin-top: 4rem;
 }
+
+/* sobre nosotros */
+
+@media (min-width: 768px) {
+    .sobre-nosotros {
+        display: flex;
+       /*  gap: 2rem; */
+        justify-content: space-between; /* con esta linea y la de flex-basis conseguimos lo mismo que con el gap pero el gap no funciona en todos los navegadores */
+    }
+
+    .sobre-nosotros__imagen,
+    .sobre-nosotros__texto {
+        flex-basis: calc(50% - 1rem); /* la separación que habrá entre ambos será 1 rem de cada uno */
+    }
+
+/* 
+    lo mismo hecho con grid
+    .sobre-nosotros {
+        display: grid;
+        grid-template-columns:repeat(2, 1fr);
+        column-gap: 2rem;
+    } */
+
+}
