@@ -167,6 +167,7 @@ img {
     text-transform:uppercase;
     font-weight: 700;
     margin-bottom: 2rem;
+    border: none;
 }
 @media (min-width: 768px) {
     .boton{
@@ -174,6 +175,9 @@ img {
     }
 }
 
+.boton:hover {
+    cursor: pointer;
+}
 .boton--primario {
     background-color: black;
    
@@ -290,4 +294,34 @@ img {
     height: 40rem;
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+/* formulario */
+
+.formulario {
+    background-color: var(--blanco);
+    margin: -5rem auto 0 auto;
+    width:95%;
+    padding: 5rem;
+}
+
+.campo {
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.campo__label {
+    flex: 0 0 9rem; /* 0 en crecimiento 0 en decrecimiento, tamaño 9 rem */
+    text-align: right;
+    padding-right: 2rem;
+}
+
+.campo__field {
+    flex: 1; /* el label al no tener factor de crecimiento y el field si, hace que el resto de pixeles vayan al field */
+    border: 1px solid var(--gris);
+}
+
+
+.campo__field--textarea {
+    height: 20rem;
 }

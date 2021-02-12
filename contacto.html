@@ -42,18 +42,31 @@
 
         <form class="formulario">
             <div class="campo">
-                <label for="nombre">Nombre</label> <!-- con este for y e id, al clickar en nombre le permite escribir directamente, sin haber clickado en la casilla -->
-                <input type="text" placeholder="Tu nombre" id="nombre">
+                <label class="campo__label" for="nombre">Nombre</label> <!-- con este for y e id, al clickar en nombre le permite escribir directamente, sin haber clickado en la casilla -->
+                <input 
+                    class="campo__field"
+                    type="text"
+                    placeholder="Tu nombre"
+                    id="nombre"
+                >
             </div>
 
             <div class="campo">
-                <label for="email">E-mail</label> <!-- con este for y e id, al clickar en nombre le permite escribir directamente, sin haber clickado en la casilla -->
-                <input type="email" placeholder="Tu e-mail" id="email">
+                <label class="campo__label" for="email">E-mail</label> <!-- con este for y e id, al clickar en nombre le permite escribir directamente, sin haber clickado en la casilla -->
+                <input 
+                    class="campo__field"
+                    type="email"
+                    placeholder="Tu e-mail" 
+                    id="email"
+                >
             </div>
 
             <div class="campo">
-                <label for="mensaje">Mensaje</label> <!-- con este for y e id, al clickar en nombre le permite escribir directamente, sin haber clickado en la casilla -->
-                <textarea id="mensaje"></textarea>
+                <label class="campo__label" for="mensaje">Mensaje</label> <!-- con este for y e id, al clickar en nombre le permite escribir directamente, sin haber clickado en la casilla -->
+                <textarea 
+                    class="campo__field campo__field--textarea"
+                    id="mensaje">
+                </textarea>
             </div>
 
             <div class="campo">
