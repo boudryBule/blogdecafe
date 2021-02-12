@@ -54,7 +54,11 @@
 
             <article class="entrada">
                 <div class="entrada__imagen">
-                    <img loading="lazy" src="img/blog1.jpg" alt="blog1">
+                    <picture> <!-- para que cargue mejor vamos a cargar el archivo webp, si no es capaz de cargarlo entonces nos cargará el jpg normal, lo que buscamos con esto es mejor rendimiento -->
+                        <source  loading="lazy" srcset="img/blog1.webp" type="image/webp">
+                        <img loading="lazy" src="img/blog1.jpg" alt="blog1">
+                    </picture>
+     
                    
                 </div>
 
@@ -69,7 +73,10 @@
 
             <article class="entrada">
                 <div class="entrada__imagen">
-                    <img loading="lazy" src="img/blog2.jpg" alt="blog1">
+                    <picture> <!-- para que cargue mejor vamos a cargar el archivo webp, si no es capaz de cargarlo entonces nos cargará el jpg normal, lo que buscamos con esto es mejor rendimiento -->
+                        <source loading="lazy" srcset="img/blog2.webp" type="image/webp">
+                        <img loading="lazy" src="img/blog2.jpg" alt="blog2">
+                    </picture>
 
                 </div>
 
@@ -85,7 +92,10 @@
 
             <article class="entrada">
                 <div class="entrada__imagen">
-                    <img loading="lazy" src="img/blog3.jpg" alt="blog1">
+                    <picture> <!-- para que cargue mejor vamos a cargar el archivo webp, si no es capaz de cargarlo entonces nos cargará el jpg normal, lo que buscamos con esto es mejor rendimiento -->
+                        <source loading="lazy" srcset="img/blog3.webp" type="image/webp">
+                        <img loading="lazy" src="img/blog3.jpg" alt="blog3">
+                    </picture>
 
                 </div>
 
