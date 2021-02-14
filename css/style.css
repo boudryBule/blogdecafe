@@ -79,8 +79,15 @@ img {
 
 /* header */
 
-.header {
+.webp .header { /* gracias a modernizr podemos ver si soporta webp o no el navegador y actuar en consecuencia */
+    background-image: url(../img/banner.webp);
+}
+.no-webp .header { /* safari no lo soporta por lo que crea la clase no-webp */
     background-image: url(../img/banner.jpg);
+}
+
+.header {
+  
     height: 60rem;
     background-size: cover;
     background-repeat: no-repeat;
